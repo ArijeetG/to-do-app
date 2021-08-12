@@ -42,7 +42,7 @@ if (!process.env.DEBUG) {
 }
 
 mongoose.connect(
-  "mongodb+srv://backendtask:X5TZb7bEObBs4i7p@origin.b0qxt.mongodb.net/backend_tasks_Arijeet",
+  "mongodb+srv://backendtask:X5TZb7bEObBs4i7p@origin.b0qxt.mongodb.net/backend_tasks",
   { useNewUrlParser: true }
 );
 var db = mongoose.connection;

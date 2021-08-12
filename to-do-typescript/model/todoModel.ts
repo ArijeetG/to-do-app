@@ -10,6 +10,6 @@ const schema = new Schema<todo>({
   completed: { type: Boolean, default: false },
 });
 
-var todoModel = model<todo>("backend_task", schema);
+var todoModel = model<todo>("backend_task_Arijeet", schema);
 
 export default todoModel;
