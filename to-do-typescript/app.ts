@@ -67,7 +67,7 @@ io.on("connection", function (socket: any) {
   socket.on("add", function (message: string) {
     console.log(message);
     messages.push(message);
-    if (messages && messages.length < 4) {
+    if (messages && messages.length < 50) {
       redisClient.set("BACKEND_TASK_ARIJEET", JSON.stringify(messages));
     } else {
       redisClient.del("BACKEND_TASK_ARIJEET");
